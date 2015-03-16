@@ -5,6 +5,21 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
+var store = new Ext.data.Store({
+   // model: 'Tl.model.Translate',
+    fields: [
+        {name: 'key'},
+        {name: 'en'},
+        {name: 'zh'}
+    ],
+    data: [
+        {
+            key: 'auth.username',
+            en: 'Username',
+            zh: '用户名'
+        }
+    ]
+});
 
 Ext.define('Tl.view.main.Main', {
     extend: 'Ext.container.Container',
@@ -58,18 +73,3 @@ Ext.define('Tl.view.main.Main', {
 
 
 
-var store = new Ext.data.Store({
-   // model: 'Tl.model.Translate',
-    fields: [
-        {name: 'key'},
-        {name: 'en'},
-        {name: 'zh'}
-    ],
-    data: [
-        {
-            key: 'auth.username',
-            en: 'Username',
-            zh: '用户名'
-        }
-    ]
-});
